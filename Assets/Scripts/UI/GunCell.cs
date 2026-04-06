@@ -12,7 +12,6 @@ public class GunCell : MonoBehaviour
         _weapon.sprite = sprite;
         _slider.maxValue = maxBullets;
         _slider.value = currenBullets;
-        Debug.Log("test");
     }
 
     public void ChangeSliderInfo(int currenBullets)
