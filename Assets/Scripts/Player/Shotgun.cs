@@ -11,7 +11,8 @@ public class Shotgun : Gun
         {
             Bullet newBullet = _pool.Get();
             newBullet.transform.SetPositionAndRotation(_spawnPoints[i].position, _spawnPoints[i].rotation);
-            newBullet.gameObject.SetActive(true);   
+            newBullet.gameObject.SetActive(true);
+            Debug.Log("Yes");
             newBullet.Init(WeaponData.Damage, WeaponData.BulletSpeed);
         }
     }
